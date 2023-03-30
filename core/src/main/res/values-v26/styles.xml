@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView.Cells.Title.Faq" parent="TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_16dp</item>
+        <item name="android:textSize">@dimen/cells_title_text_size_17sp</item>
+        <item name="android:letterSpacing">-0.0041</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="TextView.Cells.SubTitle.Faq" parent="TextView.Cells.SubTitle">
+        <item name="android:layout_marginStart">@dimen/margin_start_16dp</item>
+        <item name="android:textSize">@dimen/cells_subTitle_text_size_15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextView.Price.Verifying.Texts" parent="TextView.Cells.SubTitle.Faq">
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+
+    <style name="TextView.Cells.Title" parent="TextView">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_8dp</item>
+        <item name="android:textSize">@dimen/cells_title_text_size_17sp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="TextView.WithButton">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:fontWeight">600</item>
+    </style>
+
+    <style name="TextView.ForTransparentButton" parent="TextView.ForGreenButton">
+        <item name="android:textColor">@color/red_1</item>
+    </style>
+
+    <style name="TextView.Cells.SubTitle" parent="TextView.Cells.Title">
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:textSize">@dimen/cells_subTitle_text_size_15sp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="TextView.Cells.Info" parent="TextView">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_end_8dp</item>
+        <item name="android:textSize">@dimen/cells_info_text_size_15sp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="TextView.Price">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:fontWeight">700</item>
+    </style>
+
+    <style name="EditableTextView">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:minHeight">@dimen/min_height_20dp</item>
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:fontWeight">600</item>
+    </style>
+
+    <style name="EditableTextView.Hint" parent="EditableTextView">
+        <item name="android:textColorHint">@color/gray_1</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="EditableTextView.AsHint" parent="EditableTextView">
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="OTPInputText">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:fontWeight">500</item>
+    </style>
+
+    <style name="OTPErrorMessage">
+        <item name="android:fontWeight">400</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/red_1</item>
+    </style>
+
+    <style name="OTPResentButton" parent="OTPErrorMessage">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/blue_1</item>
+    </style>
+
+    <style name="OtpTimer" parent="OTPResentButton">
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="termsStyle">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textColorLink">@color/magenta_1</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="toolbarTitle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontWeight">600</item>
+    </style>
+
+    <style name="buttonTextStyle" parent="AppPrimaryStyle">
+        <item name="android:fontWeight">500</item>
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="SentSMSText" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_0dp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="hint">
+        <item name="android:textSize">@dimen/text_13sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/black_1</item>
+    </style>
+
+    <style name="numberInput">
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/black_1</item>
+    </style>
+    <style name="CategoryViewTextAppearance">
+        <item name="lineHeight">@dimen/line_height_13.13dp</item>
+        <item name="fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">@dimen/text_11sp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="TextView.O_Money_Agreement">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+    <style name="TextView.Add_Ads_Agreement" parent="TextView.O_Money_Agreement">
+        <item name="android:textColorLink">@color/magenta_1</item>
+    </style>
+
+    <style name="TextView.Main_Image" parent="TextView.O_Money_Agreement">
+        <item name="android:textColor">@color/white_1</item>
+    </style>
+
+    <style name="TextView.Telegram_Hint" parent="TextView.O_Money_Agreement">
+        <item name="android:textColor">@color/black_5</item>
+    </style>
+
+    <style name="CategoryNameTextAppearance">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textSize">@dimen/cells_title_text_size_17sp</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+
+</resources>

@@ -1,0 +1,529 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.OMarket.Core" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white_1</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black_1</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.OMarket.Core.Cells">
+        <item name="android:background">@color/white_1</item>
+    </style>
+
+    <style name="TextView.O_Money_Agreement">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="TextView.Add_Ads_Agreement" parent="TextView.O_Money_Agreement">
+        <item name="android:textColorLink">@color/magenta_1</item>
+    </style>
+
+    <style name="TextView.Main_Image" parent="TextView.O_Money_Agreement">
+        <item name="android:textColor">@color/white_1</item>
+    </style>
+
+    <style name="TextView.Telegram_Hint" parent="TextView.O_Money_Agreement">
+        <item name="android:textColor">@color/black_5</item>
+    </style>
+
+    <style name="EditableTextView">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:minHeight">@dimen/min_height_20dp</item>
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">@dimen/text_17sp</item>
+    </style>
+
+    <style name="EditableTextView.Hint" parent="EditableTextView">
+        <item name="android:textColorHint">@color/gray_1</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="EditableTextView.AsHint" parent="EditableTextView">
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textColor">@color/black_1</item>
+    </style>
+
+    <style name="TextView.Price">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+
+    <style name="TextView.Price.WithoutCoins" parent="TextView.Price">
+        <item name="android:textSize">@dimen/price_without_coins_text_size_22sp</item>
+    </style>
+
+    <style name="TextView.Price.WithCoins" parent="TextView.Price">
+        <item name="android:textSize">@dimen/price_with_coins_text_size_14sp</item>
+    </style>
+
+    <style name="TextView.Cells.Title" parent="TextView">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_8dp</item>
+        <item name="android:textSize">@dimen/cells_title_text_size_17sp</item>
+    </style>
+
+    <style name="TextView.ForGreenButton">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="TextView.ForTransparentButton" parent="TextView.ForGreenButton">
+        <item name="android:textColor">@color/red_1</item>
+    </style>
+
+    <style name="TextView.Cells.Info" parent="TextView">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_end_8dp</item>
+        <item name="android:textSize">@dimen/cells_info_text_size_15sp</item>
+    </style>
+
+    <style name="TextView.Cells.Title.Faq" parent="TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_16dp</item>
+        <item name="android:textSize">@dimen/cells_title_text_size_17sp</item>
+        <item name="android:letterSpacing">-0.0041</item>
+    </style>
+
+    <style name="TextView.Cells.SubTitle.Faq" parent="TextView.Cells.SubTitle">
+        <item name="android:layout_marginStart">@dimen/margin_start_16dp</item>
+        <item name="android:textSize">@dimen/cells_subTitle_text_size_15sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextView.Price.Verifying.Texts" parent="TextView.Cells.SubTitle.Faq">
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+
+    <style name="TextView.Cells.SubTitle" parent="TextView.Cells.Title">
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textSize">@dimen/cells_subTitle_text_size_15sp</item>
+    </style>
+
+    <style name="TextView.Cells.Details" parent="TextView.Cells.Title">
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:layout_marginStart">@dimen/margin_start_0dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end_16dp</item>
+    </style>
+
+    <style name="TextView.Divider.Cells.Title" parent="TextView.Cells.Title">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextView.Divider.Cells.Button" parent="TextView.Cells.Title">
+        <item name="android:textColor">@color/blue_1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+    <style name="Container">
+        <item name="android:background">@color/black_3</item>
+    </style>
+
+    <style name="Container.Main">
+        <item name="android:background">@color/gray_3</item>
+    </style>
+
+    <style name="Container.Cells">
+        <item name="android:background">@color/white_1</item>
+    </style>
+
+    <style name="Container.EditCells">
+        <item name="android:background">@color/gray_5</item>
+    </style>
+
+    <style name="Container.OneCell">
+        <item name="android:background">@color/gray_6</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="Divider.Horizontal" parent="Divider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_2</item>
+    </style>
+
+    <style name="Divider.Vertical" parent="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="numberInput">
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/black_1</item>
+    </style>
+
+    <style name="toolbarTitle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="inAppToolbarTitle">
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/black_1</item>
+    </style>
+
+    <style name="appBar">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:textColor">@color/black_4</item>
+    </style>
+
+    <style name="hint">
+        <item name="android:textSize">@dimen/text_13sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/black_4</item>
+    </style>
+
+    <style name="AppTitleStyle">
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">@dimen/text_32sp</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_6dp</item>
+    </style>
+
+    <style name="AppPrimaryStyle">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_3dp</item>
+    </style>
+
+    <style name="AppRegStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_2dp</item>
+    </style>
+
+    <style name="AppTopScreenStyle">
+        <item name="android:fontFamily">@font/sf_pro_text_semibold</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_3dp</item>
+        <item name="android:textColor">@color/black_4</item>
+        <item name="android:textSize">@dimen/text_15sp</item>
+    </style>
+
+    <style name="AppDefaultBlueText">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_3dp</item>
+        <item name="android:textColor">@color/blue_1</item>
+    </style>
+
+    <style name="FirstPageTitle" parent="AppTitleStyle">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+
+    <style name="Error500Title" parent="AppTitleStyle">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="FirstPagePrimaryText" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="MainSearchResultText" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:padding">@dimen/padding_18dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_12dp</item>
+    </style>
+
+    <style name="PrimaryUnderFieldText" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_13sp</item>
+        <item name="android:textColor">@color/black_4</item>
+    </style>
+
+    <style name="SentSMSText" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_0dp</item>
+    </style>
+
+    <style name="OTPInputText">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textSize">@dimen/text_17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+
+    <style name="OTPErrorMessage">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/red_1</item>
+    </style>
+
+    <style name="OTPResentButton" parent="OTPErrorMessage">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/blue_1</item>
+    </style>
+
+    <style name="OtpTimer" parent="OTPResentButton">
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="TimerText" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="ForgetPasswordBlueText" parent="AppDefaultBlueText">
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+
+    <style name="ErrorUnderInpText" parent="AppPrimaryStyle">
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_2dp</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/red_1</item>
+    </style>
+
+    <style name="LicenseRegularText" parent="AppRegStyle">
+        <item name="android:textColor">@color/black_5</item>
+    </style>
+
+    <style name="licenseTouchableText" parent="AppRegStyle">
+        <item name="android:textColor">@color/magenta_1</item>
+    </style>
+
+    <style name="buttonTextStyle" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="buttonMagentaTextStyle" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_13sp</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="fontWeight">400</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="MyShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_view_12dp</item>
+    </style>
+
+    <style name="ShapeAppearanceFirstPage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_view_8dp</item>
+    </style>
+
+    <style name="MagentaShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_view_4dp</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAppearance">@style/buttonTextStyle</item>
+        <item name="android:insetTop">@dimen/inset_0dp</item>
+        <item name="android:insetBottom">@dimen/inset_0dp</item>
+    </style>
+
+    <style name="ButtonGray">
+        <item name="android:background">@color/gray_5</item>
+        <item name="android:textColor">@color/black_1</item>
+    </style>
+
+    <style name="termsStyle">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textColorLink">@color/magenta_1</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="styleToggleButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/magenta_1</item>
+        <item name="android:textColor">@color/switch_text</item>
+        <item name="backgroundTint">@color/switch_bg_color</item>
+    </style>
+
+    <style name="GreenButton" parent="MaterialButton">
+        <item name="android:textColor">@color/white_1</item>
+        <item name="backgroundTint">@color/color_green_button</item>
+        <item name="strokeColor">@color/color_green_button</item>
+        <item name="rippleColor">@color/green_4</item>
+        <item name="textAppearanceButton">@style/buttonTextStyle</item>
+    </style>
+
+    <style name="GrayButton" parent="MaterialButton">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="backgroundTint">@color/gray_5</item>
+        <item name="strokeColor">@color/gray_5</item>
+        <item name="textAppearanceButton">@style/buttonTextStyle</item>
+    </style>
+
+    <style name="MagentaButton" parent="MaterialButton">
+        <item name="android:textColor">@color/white_1</item>
+        <item name="backgroundTint">@color/magenta_1</item>
+        <item name="strokeColor">@color/magenta_1</item>
+        <item name="textAppearanceButton">@style/buttonMagentaTextStyle</item>
+    </style>
+
+    <style name="progressBarStyle">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/magenta_1</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="ProgressBar.ImageLoad">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/black_1</item>
+    </style>
+
+    <style name="ProgressBar.Big">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/black_1</item>
+    </style>
+
+    <style name="AdsPriceStyle" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_15sp</item>
+        <item name="android:textColor">@color/black_5</item>
+    </style>
+
+    <style name="AdsSecondaryStyle" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textColor">@color/gray_1</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_2dp</item>
+    </style>
+
+    <style name="AdsProductStyle" parent="AppPrimaryStyle">
+        <item name="android:textSize">@dimen/text_13sp</item>
+        <item name="android:textColor">@color/black_5</item>
+    </style>
+
+    <style name="styleTextViewers">
+        <item name="android:drawablePadding">@dimen/margin_2dp</item>
+        <item name="android:background">@drawable/background_viewed_textview</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textSize">@dimen/text_11sp</item>
+        <item name="android:paddingStart">@dimen/padding_4dp</item>
+        <item name="android:paddingEnd">@dimen/padding_4dp</item>
+        <item name="android:layout_margin">@dimen/margin_8dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@color/transparent</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="android:textColorPrimary">@color/red</item>
+        <item name="android:background">@drawable/background_rounded_search_view</item>
+        <item name="android:layout_marginEnd">@dimen/margin_50dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_end_13dp</item>
+        <item name="iconifiedByDefault">false</item>
+    </style>
+    <style name="StyleMainLayout">
+        <item name="android:background">@color/gray_5</item>
+    </style>
+
+    <style name="StyleAdsBackground">
+        <item name="android:background">@color/gray_5</item>
+    </style>
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="colorControlActivated">@color/magenta_1</item>
+
+        <item name="queryBackground">@color/transparent</item>
+        <item name="android:inputType">textFilter|textNoSuggestions</item>
+        <item name="fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+
+    <style name="MainSearchView">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="CategoryViewTextAppearance">
+        <item name="lineHeight">@dimen/line_height_13.13dp</item>
+        <item name="fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:textSize">@dimen/text_11sp</item>
+    </style>
+
+    <style name="CategoryNameTextAppearance">
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textSize">@dimen/cells_title_text_size_17sp</item>
+    </style>
+
+    <dimen name="padding_18dp">18dp</dimen>
+
+    <style name="detailedAdsTitleStyle">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_3dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black_5</item>
+        <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8dp</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="adsMoreDetailedStyle" parent="AppDefaultBlueText">
+        <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_end_13dp</item>
+    </style>
+
+    <style name="detailedAdsDescriptionStyle" parent="AppPrimaryStyle">
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8dp</item>
+    </style>
+
+    <style name="TopPositionTextStyle">
+        <item name="android:layout_margin">@dimen/margin_16dp</item>
+        <item name="android:background">@drawable/background_rounded_text</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:lineSpacingExtra">@dimen/extra_spacing_3dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@color/white_1</item>
+        <item name="android:textSize">@dimen/text_13sp</item>
+    </style>
+</resources>
